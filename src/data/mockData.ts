@@ -62,7 +62,7 @@ export const UPI_APPS: UpiAppConfig[] = [
     color: '#00796B',
     badgeBg: '#E0F2F1',
     badgeText: '#004D40',
-    vpaHandle: 'quantum@upi',
+    vpaHandle: 'r001@upi',
     iconType: 'bhim',
   },
   {

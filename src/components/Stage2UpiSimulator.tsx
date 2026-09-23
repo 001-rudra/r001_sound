@@ -162,7 +162,7 @@ export const Stage2UpiSimulator: React.FC<Stage2UpiSimulatorProps> = ({
                       <h3 className="text-sm font-bold text-slate-900">r001 sound Store</h3>
                       <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
                     </div>
-                    <p className="text-[11px] text-slate-500 font-mono">pay@quantumstore</p>
+                    <p className="text-[11px] text-slate-500 font-mono">pay@r001sound</p>
                     <span className="inline-block mt-1 text-[10px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
                       Verified NPCI Merchant
                     </span>

@@ -133,7 +133,7 @@ export const Stage3Confirmation: React.FC<Stage3ConfirmationProps> = ({
                 </div>
                 <div className="flex justify-between items-center text-xs">
                   <span className="text-slate-500">Merchant VPA:</span>
-                  <span className="font-mono text-slate-700">pay@quantumstore</span>
+                  <span className="font-mono text-slate-700">pay@r001sound</span>
                 </div>
               </div>
 

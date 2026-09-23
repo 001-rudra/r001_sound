@@ -109,7 +109,7 @@ export default function App() {
     amountUSD: QUANTUM_HEADPHONES.priceUSD,
     currency,
     status: isOrderConfirmed ? 'paid_confirmed' : isUpiPaid ? 'upi_paid' : 'checkout_initiated',
-    vpa: 'pay@quantumstore',
+    vpa: 'pay@r001sound',
     upiApp: selectedUpiApp,
     generatedUtr,
     submittedUtr,

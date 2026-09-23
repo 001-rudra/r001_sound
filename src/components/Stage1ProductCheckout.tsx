@@ -364,7 +364,7 @@ export const Stage1ProductCheckout: React.FC<Stage1ProductCheckoutProps> = ({
                   <div className="text-xs">
                     <p className="font-bold text-slate-800">Scan to Pay via Any UPI App</p>
                     <p className="text-[11px] text-slate-500 mt-0.5">
-                      VPA: <span className="font-mono text-blue-700">pay@quantumstore</span>
+                      VPA: <span className="font-mono text-blue-700">pay@r001sound</span>
                     </p>
                     <p className="text-[10px] text-slate-400 mt-1">
                       Works with GPay, PhonePe, Paytm, BHIM & 100+ banking apps

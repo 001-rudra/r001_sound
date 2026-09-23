@@ -98,7 +98,7 @@ export const InvoiceModal: React.FC<InvoiceModalProps> = ({
                 Method: <strong>UPI Intent Transfer</strong>
               </p>
               <p className="text-slate-600 font-mono">
-                Merchant VPA: <span className="text-blue-700 font-medium">pay@quantumstore</span>
+                Merchant VPA: <span className="text-blue-700 font-medium">pay@r001sound</span>
               </p>
               <p className="text-slate-900 font-mono">
                 12-Digit UTR: <strong className="text-blue-700">{order.submittedUtr || order.generatedUtr}</strong>
