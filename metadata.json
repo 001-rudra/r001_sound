@@ -1,0 +1,6 @@
+{
+  "name": "Quantum UPI Checkout & Payment Flow Mockup",
+  "description": "An interactive, multi-panel e-commerce checkout and UPI intent payment mockup showcasing the 3-stage user journey from product page to UPI app transaction and reference number confirmation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

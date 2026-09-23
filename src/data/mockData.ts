@@ -1,0 +1,113 @@
+import { Product, UpiAppConfig, AuditRecord } from '../types/payment';
+
+export const QUANTUM_HEADPHONES: Product = {
+  id: 'quantum-h1',
+  name: 'Quantum Headphones Pro',
+  tagline: 'High-Fidelity Spatial Audio with Adaptive Active Noise Cancellation',
+  priceINR: 14999,
+  priceUSD: 189,
+  originalPriceINR: 19999,
+  originalPriceUSD: 249,
+  rating: 4.9,
+  reviewCount: 1420,
+  description:
+    'Engineered with 40mm bio-cellulose dynamic drivers, carbon-neutral titanium frame, 45-hour playback battery, and crystal-clear low-latency Bluetooth 5.4 transmission.',
+  specs: [
+    { label: 'Driver Size', value: '40mm Custom Bio-Cellulose' },
+    { label: 'Battery Life', value: 'Up to 45 Hours (ANC On)' },
+    { label: 'Frequency Response', value: '10Hz – 40,000Hz' },
+    { label: 'Noise Cancellation', value: 'Hybrid Adaptive ANC (-42dB)' },
+    { label: 'Fast Charge', value: '10 min charge = 5 hours play' },
+    { label: 'Connectivity', value: 'Bluetooth 5.4 / USB-C Lossless' },
+  ],
+  variants: [
+    { id: 'v-blue', name: 'Midnight Blue', colorHex: '#1E293B', inStock: true },
+    { id: 'v-graphite', name: 'Matte Graphite', colorHex: '#0F172A', inStock: true },
+    { id: 'v-silver', name: 'Titanium Silver', colorHex: '#94A3B8', inStock: true },
+  ],
+  image: '/src/assets/images/quantum_headphones_1790168201525.jpg',
+};
+
+export const UPI_APPS: UpiAppConfig[] = [
+  {
+    id: 'gpay',
+    name: 'Google Pay',
+    color: '#1A73E8',
+    badgeBg: '#E8F0FE',
+    badgeText: '#174EA6',
+    vpaHandle: 'pay@gpay',
+    iconType: 'gpay',
+  },
+  {
+    id: 'phonepe',
+    name: 'PhonePe',
+    color: '#5F259F',
+    badgeBg: '#F3E8FF',
+    badgeText: '#581C87',
+    vpaHandle: 'order@ybl',
+    iconType: 'phonepe',
+  },
+  {
+    id: 'paytm',
+    name: 'Paytm UPI',
+    color: '#00BAF2',
+    badgeBg: '#E0F7FA',
+    badgeText: '#006064',
+    vpaHandle: 'store@paytm',
+    iconType: 'paytm',
+  },
+  {
+    id: 'bhim',
+    name: 'BHIM UPI',
+    color: '#00796B',
+    badgeBg: '#E0F2F1',
+    badgeText: '#004D40',
+    vpaHandle: 'quantum@upi',
+    iconType: 'bhim',
+  },
+  {
+    id: 'cred',
+    name: 'CRED UPI',
+    color: '#111827',
+    badgeBg: '#F3F4F6',
+    badgeText: '#111827',
+    vpaHandle: 'vip@cred',
+    iconType: 'cred',
+  },
+];
+
+export const INITIAL_AUDIT_RECORDS: AuditRecord[] = [
+  {
+    id: 'rec-001',
+    orderId: 'QM-88912',
+    utr: '429188471203',
+    amount: '₹14,999.00',
+    payerName: 'Rohan Sharma',
+    bankRef: 'HDFC Bank - NPCI/UPI/429188471203',
+    submittedAt: 'Today, 10:14 AM',
+    reconciliationStatus: 'auto_matched',
+    matchedNote: 'Bank statement credited, exact amount and reference matched.',
+  },
+  {
+    id: 'rec-002',
+    orderId: 'QM-88909',
+    utr: '429104889122',
+    amount: '₹14,999.00',
+    payerName: 'Priya Iyer',
+    bankRef: 'ICICI Bank - NPCI/UPI/429104889122',
+    submittedAt: 'Today, 09:42 AM',
+    reconciliationStatus: 'auto_matched',
+    matchedNote: 'Instant webhook settlement confirmation.',
+  },
+  {
+    id: 'rec-003',
+    orderId: 'QM-88901',
+    utr: '429077189945',
+    amount: '₹14,999.00',
+    payerName: 'Amit Verma',
+    bankRef: 'SBI - NPCI/UPI/429077189945',
+    submittedAt: 'Yesterday, 06:15 PM',
+    reconciliationStatus: 'auto_matched',
+    matchedNote: 'UTR verified via automated bank API reconciliation.',
+  },
+];
